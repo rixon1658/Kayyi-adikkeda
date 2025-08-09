@@ -14,7 +14,7 @@
 
 
 ### Project Description
-My project build is program for switching ON/OFF a light by clapping. By clapping one time,switches on the bulb; two clap allows you to turn it off ,and three clap goes into party mode and plays a corny music.
+My project build is a program for switching ON/OFF a light bulb by clap detection. By clapping one time,switches on the bulb; two clap allows you to turn it off ,and three clap goes into party mode and plays a corny music.
 
 
 ### The Problem (that doesn't exist)
