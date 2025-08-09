@@ -1,96 +1,110 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# Kayyi Adikeda!!! 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Cipher
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Aaron Verghese Shaji - College Of Engineering Munnar
+- Member 2: Rixon N Punnachan - College Of Engineering Munnar
+
 
 ### Project Description
-[2-3 lines about what your project does]
+My project build is program for switching ON/OFF a light by clapping. By clapping one time,switches on the bulb; two clap allows you to turn it off ,and three clap goes into party mode and plays a corny music.
+
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+When we get into our room,its dark which makes it hard to find the light switch but could be turned ON with a clap and OFF.While we lie down to sleep and forget to turned the lights off, its a disaster right!!This issue can be solved with just one clap.If u wanna make put a party mode,this can be done with just three claps.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+
+This could be used for real world use with a light bulb with right hardwares and changes to the code to implement it which makes it easy to switch on bulb and off with a clap.Mood for a party, 3 claps and the party is on!!!!
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Python
+- Tkinter
+- sounddevice,scipy.signal,numpy,pygame,pyttsx3
+- Audio input, signal processing, pattern detection 
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
-### Implementation
-For Software:
-# Installation
-[commands]
 
-# Run
-[commands]
+
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1757" height="694" alt="Kayyi adikeda!!!_code" src="https://github.com/user-attachments/assets/53245900-5217-4ca6-880d-8a708900b681" />
+This shows the code.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1892" height="964" alt="Kayyi adikeda_terminal to run" src="https://github.com/user-attachments/assets/4dbb97cd-ef8f-46b7-9c0e-b5a90fae2b5a" />
+This shows the code with the terminal for run.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1909" height="1019" alt="Kayyi adikeda_with run and GUI" src="https://github.com/user-attachments/assets/d6a40014-774d-44a0-8fe2-1c404d341bb4" />
+This shows how it runs and the gui it shows as a prototype.
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+                ┌───────────────────┐
+                │ Microphone Input   │
+                └───────┬───────────┘
+                        │ (sounddevice stream)
+                        ▼
+             ┌──────────────────────────┐
+             │ Audio Processing Pipeline │
+             │ - Bandpass filter         │
+             │ - RMS & peak detection    │
+             │ - Dynamic noise threshold │
+             └───────────┬──────────────┘
+                         │ (detected clap)
+                         ▼
+                ┌─────────────────┐
+                │ Clap Queue       │
+                │ (time-stamped)   │
+                └─────────┬───────┘
+                          │
+                          ▼
+            ┌────────────────────────┐
+            │ Sequence Processor      │
+            │ - Count claps           │
+            │ - Timeout after gap     │
+            └───────────┬────────────┘
+                        │
+                        ▼
+           ┌───────────────────────────────┐
+           │ Action Handler                 │
+           │ - Light ON / OFF / Party mode  │
+           │ - Random ignore mode           │
+           │ - TTS responses                │
+           └────────────────┬──────────────┘
+                            │
+      ┌─────────────────────┼───────────────────────┐
+      ▼                     ▼                       ▼
+GUI Update            Music Control         Voice Feedback
+(Tkinter bulb)        (pygame mixer)        (pyttsx3 TTS)
 
-For Hardware:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/drive/folders/1rdWEg-2WMQMwIvwenC5yUAtfRsQIcVxj?usp=sharing
+This video demo shows how the protoype works with clap sequences,
+1 clap- Turns ON
+2 clap- Turns OFF
+3 clap- Turns the party mode ON
 
-# Additional Demos
-[Add any extra demo materials/links]
+
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Aaron Verghese Shaji: Idea and Program code.
+- Rixon N Punnachan: Helped with code development and training sequences.
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
